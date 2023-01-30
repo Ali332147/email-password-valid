@@ -45,35 +45,7 @@ function App() {
   }
   return (
   
-<div className='body1'>
-<div className="registration w-50 mx-auto mt-5">
-  <h2 className='mb-4'>Please Register :</h2>
-<Form noValidate validated={validated}  onSubmit={handleFormSubmit}>
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Email address</Form.Label>
-      <Form.Control onBlur={ handleEmail} type="email" required placeholder="Enter email" />
-      <Form.Control.Feedback type="invalid">
-            Please provide a valid email.
-          </Form.Control.Feedback>
-    </Form.Group>
-  
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label >Password</Form.Label>
-      <Form.Control onBlur={handlePassword} required type="password" placeholder="Password" />
-      <Form.Control.Feedback type="invalid">
-            Please provide a valid password.
-          </Form.Control.Feedback>
-    </Form.Group>
-    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      <Form.Check type="checkbox" label="Check me out" />
-    </Form.Group>
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Form>
-  <hr />
-
-  </div>  
+<div className='body1'> 
   
     <div id="bp" class="container py-3">
         <div class="text-center py-lg-5">
@@ -158,6 +130,34 @@ function App() {
             <hr />
 
 
+            <div className="registration w-50 mx-auto mt-5">
+  <h2 className='mb-4'>Please Register :</h2>
+<Form noValidate validated={validated}  onSubmit={handleFormSubmit}>
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Label>Email address</Form.Label>
+      <Form.Control onBlur={ handleEmail} type="email" required placeholder="Enter email" />
+      <Form.Control.Feedback type="invalid">
+            Please provide a valid email.
+          </Form.Control.Feedback>
+    </Form.Group>
+  
+    <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Label >Password</Form.Label>
+      <Form.Control onBlur={handlePassword} required type="password" placeholder="Password" />
+      <Form.Control.Feedback type="invalid">
+            Please provide a valid password.
+          </Form.Control.Feedback>
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Check type="checkbox" label="Check me out" />
+    </Form.Group>
+    <Button variant="primary" type="submit">
+      Submit
+    </Button>
+  </Form>
+  <hr />
+
+  </div> 
 
 
         </div>
